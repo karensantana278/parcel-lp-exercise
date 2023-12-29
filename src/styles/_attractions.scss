@@ -1,0 +1,28 @@
+@use 'variables';
+
+.attractions{
+    padding: 60px 0px;
+    background: variables.$textColor; 
+    background: -webkit-linear-gradient(to right, variables.$bgGradient, variables.$textColor);
+    background: linear-gradient(to right, variables.$bgGradient, variables.$textColor);
+
+    .title{
+        text-align: center;
+        color: variables.$ligthTextColor;
+    }
+
+
+    .card{
+        border-color: variables.$textColor;
+        text-align: center;
+
+        &-title{
+            color: variables.$textColor;
+            text-transform: uppercase;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 30px 0px;
+    }
+}

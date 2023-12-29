@@ -1,0 +1,26 @@
+@use 'variables';
+
+.location{
+    padding: 60px 0px;
+
+    &__image{
+        max-height: 600px;
+
+       
+    }
+
+    &__content{
+        &__info{
+            color: variables.$textColor;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        padding: 30px 0px;
+
+        &__image{
+            max-height: 100%;
+        }
+    }
+}
